@@ -1,0 +1,30 @@
+body{
+    background-image:image("bg.jpg");
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(10, auto); 
+    width: 50px;
+    gap: 5px;
+    margin: 5px 5px;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    background-color:black;
+    border: 1px solid gold;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 25px;
+    color: whitesmoke;
+    outline: none;
+    width: 50px;
+}
+
+.btn:hover{
+    border-color: gold;
+    box-shadow: 5px 5px 15px 15px;
+}
