@@ -1,5 +1,7 @@
 function play(id) {
-    document.getElementById(id).play();
+    const current = document.getElementById(id);
+    current.play();
+    document.getElementById(`btn-${id}`).classList.add("press");
 }
 
 document.addEventListener("keydown", condition);
@@ -8,6 +10,7 @@ function condition(event){
     console.log("Key pressed");
     if(event.code === "KeyA"){
         play('clap');
+        
     } else if(event.code === "KeyS"){
         play('hihat');
     } else if(event.code === "KeyD"){

@@ -1,21 +1,23 @@
 body{
-    background-image: url("image.jpg");
+    background-image: url("images/bg-image.jpg");
 }
 .btn-grid{
     display: grid;
     grid-template-columns: repeat(10, auto); 
-    gap: 5px;
+    gap: 15px;
     margin: 5px 5px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
 }
 
 .btn{
     background-color: lightslategray;
     border: 1px solid plum;
+    transform: scale(1.1);
     border-radius: 5px;
     padding: 5px 5px;
     outline: none;
@@ -32,5 +34,12 @@ body{
     font-size: 35px;
     color: black;
     font-weight: bolder;
+}
+
+.press{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+    
 }
 
